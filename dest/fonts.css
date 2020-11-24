@@ -43,3 +43,11 @@
     font-display: fallback;
 }
 
+@font-face {
+    font-family: 'SVN';
+    src: url('../fonts/SVN-Avo.woff2') format('woff2'),
+        url('../fonts/SVN-Avo.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: fallback;
+}
