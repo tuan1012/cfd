@@ -86,86 +86,114 @@
 .courses {
     padding-top: 50px;
     background: #F4F7F6;
-    
+
+
     img {
         cursor: pointer;
     }
 
-    .online, .offline {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 75px;
-       
-        p:first-child {
-            font-size: 16px;
-            text-transform: uppercase;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            padding-bottom: 20px;
-        }
-    
-        h3 {
-            font-size: 50px;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            padding-bottom: 50px;
-        }
-    
-        .course {
-            padding: 10px 15px;
-    
-            a {
-                position: relative;
-                overflow: hidden;
-    
-                .overlay {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    background: rgba(0, 0, 0, 0.5);
-                    ;
-                }
-    
-                img {
-                    transition: 0.5s;
-                }
-    
-                &:hover img {
-                    transform: scale(1.1);
-                    transition: 0.7s;
-                }
-    
+    .online,
+    .offline {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 75px;
+
+            p:first-child {
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                padding-bottom: 20px;
+                margin: 0 auto;
             }
-    
-    
-            &__content {
-                padding: 15px 20px;
-                background: $white-cl;
-    
-                h4 {
-                    font-size: 22px;
-                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                    font-weight: bold;
-                    padding-bottom: 8px;
+
+            h3 {
+                font-size: 50px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                padding-bottom: 50px;
+            }
+
+            .course {
+                padding: 10px 15px;
+
+                a {
+                    position: relative;
+                    overflow: hidden;
+
+                    .overlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0, 0, 0, 0.5);
+                        ;
+                    }
+
+                    img {
+                        transition: 0.5s;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.1);
+                        transition: 0.7s;
+                    }
+
                 }
-    
-                p {
+
+
+                &__content {
+                    padding: 15px 20px;
+                    background: $white-cl;
+
+                    h4 {
+                        font-size: 22px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-weight: bold;
+                        padding-bottom: 8px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        color: #838383;
+                    }
+
+                }
+            }
+
+            .online {
+                border-bottom: 1px solid #00AFAB;
+            }
+
+            .offline {
+                padding-top: 100px;
+            }
+
+            .author {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+
+                span {
                     font-size: 16px;
                     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                    color: #838383;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: 1px solid #E0E0E0;
+                    padding-right: 10px;
                 }
-    
             }
         }
-    }
-    .online {
-        border-bottom: 1px solid #00AFAB;
-    }
-    .offline {
-        padding-top: 100px;
+
     }
 
+}
 
+.homework {
+    height: 100vh;
 }
